@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Chat Log Repository</h1>
+</div>
+<div class="row">
+    <div class="col-md-4">
+        <h2>Welcome to Bot Chat Log</h2>
+        <p>
+            Bot Chat Log Repository. Insert and view chat log data.
+        </p>
+    </div>
+    <div class="col-md-4">
+        <h2>Insert</h2>
+        <p>You can insert new log data by click below.</p>
+        <p class="btn btn-default"> @Html.ActionLink("Insert", "Create", "chatlog")</p>
+    </div>
+    <div class="col-md-4">
+        <h2>View</h2>
+        <p>You can view all chat log data by clicking below.</p>
+        <p class="btn btn-default"> @Html.ActionLink("View", "Index", "chatlog")</p>
+    </div>
+</div>
